@@ -5,15 +5,12 @@
   --font-size-button: 1.4rem;
   --columns: 4;
   --gap: 1.6rem;
-  --primary-color: #161616;
-  --primary-light: #3c3c3c;
-  --primary-dark: #000000;
-
-  --secondary-color: #e01937;
-  --secondary-light: #ff5b61;
-  --secondary-dark: #a60011;
-
-  --text-color: #ffffff;
+  --primary-second: #000000;
+  --primary-first: #F9D704;
+  --background-products: #151E22;
+  --background: #111111;
+  --background-0: rgba(255, 255, 255, 1);
+  --white: #FFFFFF;
 }
 
 a,
@@ -59,4 +56,62 @@ html {
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Bg-primaryFirst {
+  background-color: var(--primary-first);
+}
+
+.Bg-primaryFirst-logo {
+  width: 90%;
+}
+
+.Bg-primaryFirst-logo img {
+  height: 300px;
+}
+
+.Bg-primarySecond {
+  background-color: var(--primary-second);
+}
+
+.Decks img {
+  height: 450px;
+}
+
+.Decks {
+  position: absolute;
+}
+
+.Decks:nth-child(1) {
+	transform-origin: bottom;
+	transform: rotate(-30deg);
+}
+
+.Decks:nth-child(2) {
+	position: relative;
+	top: 20px;
+	z-index: 100;
+	left: 10px;
+}
+
+.Decks:nth-child(3) {
+	transform-origin: bottom;
+	transform: rotate(30deg);
+}
+
+.FullScreen {
+  width: 100%;
+  min-width: 320px;
+  height: 100vh;
+}
+
+.Flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
