@@ -11,13 +11,11 @@ const Home = () => {
       console.log(1);
       setLoading(false);
       console.log(loading);
-    }, 3000);
+    }, 0);
   }, []);
 
   if (loading) {
     return (
-      // <Background cls=' FullScreen Flex-center Bg-primaryFirst'>
-      //   <Logo cls='Flex-center Bg-primaryFirst-logo' />
       <BackgroundLogo />
     );
   } else {

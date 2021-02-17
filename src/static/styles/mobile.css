@@ -6,11 +6,11 @@
   --columns: 4;
   --gap: 1.6rem;
   --primary-second: #000000;
-  --primary-first: #F9D704;
-  --background-products: #151E22;
+  --primary-first: #f9d704;
+  --background-products: #151e22;
   --background: #111111;
   --background-0: rgba(255, 255, 255, 1);
-  --white: #FFFFFF;
+  --white: #ffffff;
 }
 
 a,
@@ -79,8 +79,17 @@ img {
   background-color: var(--primary-second);
 }
 
+.Bg-primarySecond-text {
+  color: #3e3e3e;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1.6rem;
+  position: absolute;
+  bottom: 100px;
+}
+
 .Decks img {
-  height: 450px;
+  height: 90vw;
 }
 
 .Decks {
@@ -88,20 +97,20 @@ img {
 }
 
 .Decks:nth-child(1) {
-	transform-origin: bottom;
-	transform: rotate(-30deg);
+  transform-origin: bottom;
+  transform: rotate(-30deg);
 }
 
 .Decks:nth-child(2) {
-	position: relative;
-	top: 20px;
-	z-index: 100;
-	left: 10px;
+  position: relative;
+  top: 20px;
+  z-index: 100;
+  left: 10px;
 }
 
 .Decks:nth-child(3) {
-	transform-origin: bottom;
-	transform: rotate(30deg);
+  transform-origin: bottom;
+  transform: rotate(30deg);
 }
 
 .FullScreen {
@@ -112,6 +121,13 @@ img {
 
 .Flex-center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Flex-column-center {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

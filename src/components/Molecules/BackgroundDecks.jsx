@@ -7,12 +7,15 @@ import daybreack from '../../assets/svg/Img/Decks/Platinum/DAYBREAK-STATIC-DECK.
 
 const BackgroundDecks = () => {
   return (
-    <Rectangle cls="FullScreen Flex-center Bg-primarySecond">
+    <Rectangle cls="FullScreen Flex-column-center Bg-primarySecond">
       <div className="Flex-center">
-        <Decks cls='Decks' deck={basilisk} />
-        <Decks cls='Decks' deck={ripped} />
-        <Decks cls='Decks' deck={daybreack} />
+        <Decks cls="Decks" deck={basilisk} />
+        <Decks cls="Decks" deck={ripped} />
+        <Decks cls="Decks" deck={daybreack} />
       </div>
+      <article className="Bg-primarySecond-text">
+        <h2>Tenemos tablas para todos los estilos</h2>
+      </article>
     </Rectangle>
   );
 };
