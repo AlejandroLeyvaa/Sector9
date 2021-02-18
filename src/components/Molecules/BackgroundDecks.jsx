@@ -7,7 +7,7 @@ import daybreack from '../../assets/svg/Img/Decks/Platinum/DAYBREAK-STATIC-DECK.
 
 const BackgroundDecks = () => {
   return (
-    <Rectangle cls="FullScreen Flex-column-center Bg-primarySecond">
+    <Rectangle cls="Flex-column-center Bg-primarySecond">
       <div className="Flex-center">
         <Decks cls="Decks" deck={basilisk} />
         <Decks cls="Decks" deck={ripped} />

@@ -47,10 +47,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: #ffffff;
-}
-
 html {
   height: 100%;
   font-size: 62.5%;
@@ -58,9 +54,20 @@ html {
   scroll-behavior: smooth;
 }
 
+a:visited {
+  color: #ffffff;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+body {
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .Bg-primaryFirst {
@@ -77,6 +84,8 @@ img {
 
 .Bg-primarySecond {
   background-color: var(--primary-second);
+  width: 100vw;
+  height: 100vh;
 }
 
 .Bg-primarySecond-text {
@@ -89,7 +98,7 @@ img {
 }
 
 .Decks img {
-  height: 90vw;
+  height: 230px;
 }
 
 .Decks {
