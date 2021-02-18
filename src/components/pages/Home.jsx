@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 // import Background from '../Atoms/Rectangle';
 import BackgroundLogo from '../Molecules/BackgroundLogo';
 import BackgroundDecks from '../Molecules/BackgroundDecks';
+import BackgroundComplete from '../Molecules/BackgroundComplete';
 
 const Home = () => {
   let [loading, setLoading] = useState(true);
@@ -20,7 +21,8 @@ const Home = () => {
     );
   } else {
     return (
-      <BackgroundDecks />
+      // <BackgroundDecks />
+      <BackgroundComplete />
     );
   }
 };
