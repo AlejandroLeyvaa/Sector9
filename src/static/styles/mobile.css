@@ -65,7 +65,6 @@ img {
 }
 
 body {
-  background-color: var(--background);
   width: 100%;
   min-width: 100vw;
   height: 100%;
@@ -74,7 +73,6 @@ body {
 }
 
 .Header {
-  background-color: var(--background);
   width: 100%;
   min-width: 320px;
   display: flex;
@@ -95,7 +93,8 @@ body {
   margin: 1.6rem;
 }
 
-.Header-icons .icon-cart, .icon-menu {
+.Header-icons .icon-cart,
+.icon-menu {
   width: 20px;
 }
 
@@ -111,12 +110,12 @@ body {
 }
 
 .Categories-products {
-	background-color: var(--background-products);
-	border-radius: 8px;
-	height: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  background-color: var(--background-products);
+  border-radius: 8px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 1.6rem 0;
   padding: 0 1.6rem;
 }
@@ -125,7 +124,8 @@ body {
   margin: 0;
 }
 
-.Categories-products-figure, .Categories-products-image {
+.Categories-products-figure,
+.Categories-products-image {
   height: inherit;
   display: flex;
 }
@@ -152,6 +152,84 @@ body {
 .Product .Text {
   text-align: start;
 }
+
+.Checkout {
+  background-color: var(--primary-second);
+}
+
+.Checkout .Header {
+  padding: 1.4rem 1.6rem 0 1.6rem;
+}
+
+.Checkout .Header h2 {
+  color: var(--primary-first);
+  padding: 0;
+}
+
+.Checkout .Title {
+  margin: 0 0 0.8rem 0;
+}
+
+.Checkout-product {
+  width: 100%;
+  background: var(--background-products);
+}
+
+.Checkout-product-figure {
+  display: flex;
+  justify-content: center;
+  height: inherit;
+  padding-top: 1rem;
+}
+
+.Checkout-product-figure img {
+  height: 60vh;
+}
+
+.Checkout-small-container {
+  margin-right: 1.6rem;
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+
+.Checkout-product-small {
+  border: 1px solid var(--primary-first);
+  border-radius: 4px;
+  width: 63px;
+  height: 63px;
+  margin: 1.6rem 0;
+}
+
+.Checkout-product-desc {
+  color: var(--text-color);
+  width: 100%;
+  padding: 0 1.6rem;
+  margin-bottom: 10rem;
+}
+
+.Checkout-product-desc h2,
+h3 {
+  padding: 0.8rem 0;
+}
+
+.Checkout-title-container {
+  font-size: 1.2rem;
+  padding: 1.6rem 0;
+}
+
+.Checkout-title-container h2:nth-child(2) {
+  color: var(--primary-first);
+}
+
+.Checkout-button-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 1.6rem;
+  position: fixed;
+  bottom: 0;
+}
+
 .Title {
   color: var(--white);
   margin: 0 0 1.6rem 0;
@@ -182,7 +260,8 @@ body {
   padding: 1.6rem;
 }
 
-.Decks img, .Tables img {
+.Decks img,
+.Tables img {
   height: 90vw;
 }
 
@@ -214,10 +293,15 @@ body {
 }
 
 .Grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.6rem;
   margin: 1.6rem 0;
+}
+
+.Flex-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 .Flex-center {
@@ -236,4 +320,16 @@ body {
 .Text {
   font-size: 1.4rem;
   line-height: 2.5rem;
+}
+
+.Button {
+  background-color: var(--primary-first);
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+}
+
+.Padding-horizontal {
+  padding: 0 1.6rem;
 }
