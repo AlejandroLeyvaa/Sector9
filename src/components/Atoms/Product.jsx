@@ -1,14 +1,14 @@
 import React from 'react';
 import rayCollins from '../../assets/svg/Img/Decks/Classix/RAY-COLLINS-MERCHANT-DECK.svg';
 
-const Product = () => {
+const Product = ({cls, children}) => {
   return (
     <>
-      <article className="Product">
+      <article className={cls}>
         <figure className="Product-figure">
           <img src={rayCollins} alt="" />
         </figure>
-        <p className='Text'>Basilisk Deck</p>
+        {children}
       </article>
     </>
   );

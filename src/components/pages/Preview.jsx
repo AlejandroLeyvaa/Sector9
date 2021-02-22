@@ -16,7 +16,7 @@ const Preview = () => {
       console.log(1);
       setLoading(false);
       console.log(loading);
-    }, 100);
+    }, 3000);
   }, []);
 
   const handleClick = (e) => {

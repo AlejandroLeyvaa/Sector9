@@ -79,6 +79,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.6rem;
+}
+
+.Header .Title {
+  color: var(--primary-first);
+  margin: 0 0 0.8rem 0;
+  padding: 0;
 }
 
 .Header-logo {
@@ -154,23 +161,6 @@ body {
   text-align: start;
 }
 
-.Checkout {
-  background-color: var(--primary-second);
-}
-
-.Checkout .Header {
-  padding: 1.4rem 1.6rem 0 1.6rem;
-}
-
-.Checkout .Header h2 {
-  color: var(--primary-first);
-  padding: 0;
-}
-
-.Checkout .Title {
-  margin: 0 0 0.8rem 0;
-}
-
 .Checkout-product {
   width: 100%;
   background: var(--background-products);
@@ -214,26 +204,44 @@ h3 {
   padding: 0.8rem 0;
 }
 
-.Checkout-title-container {
+.Title-container {
   font-size: 1.2rem;
   padding: 1.6rem 0;
 }
 
-.Checkout-title-container h2:nth-child(2) {
+.Title-container h2:nth-child(2) {
   color: var(--primary-first);
 }
 
 .Checkout-button-container {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
   width: 100%;
   padding: 1.6rem;
   position: fixed;
   bottom: 0;
 }
 
+.Buy {
+  color: var(--text-color);
+  width: 100%;
+}
+
+.Buy-button-container {
+  width: 100%;
+  padding: 0 1.6rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 .Title {
   color: var(--white);
   margin: 0 0 1.6rem 0;
+}
+
+.Bg-products {
+  width: 100%;
+  background: var(--background-products);
 }
 
 .Bg-primaryFirst {
@@ -294,11 +302,27 @@ h3 {
   height: 100vh;
 }
 
+.Margin-left {
+  margin-left: 0.8rem;
+}
+
+.Margin-right {
+  margin-right: 0.8rem;
+}
+
+.Width-all {
+  width: 100%;
+}
+
 .Grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.6rem;
   margin: 1.6rem 0;
+}
+
+.Flex {
+  display: flex;
 }
 
 .Flex-between {
@@ -337,14 +361,26 @@ h3 {
   height: 50px;
 }
 
+.Padding {
+  padding: 1.6rem;
+}
+
 .Padding-horizontal {
   padding: 0 1.6rem;
 }
 
+.Padding-vertical {
+  padding: 1.6rem 0;
+}
+
+.Padding-none {
+  padding: 0;
+}
+
 .Arrows-container {
-	width: 100%;
-	position: absolute;
-	bottom: 3.2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 3.2rem;
 }
 
 .Arrow-left {
